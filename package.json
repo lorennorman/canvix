@@ -1,0 +1,17 @@
+{
+  "name": "canvas-renderer",
+  "description": "Using HTML Canvas element and its lovely matrix transforms, simplify complex rendering and animation in the browser.",
+  "version": "0.0.1",
+  "author": "Loren Norman <lorennorman@gmail.com>",
+  "contributors": [ 
+    { "name": "Loren Norman", "email": "lorennorman@gmail.com" }
+  ],
+  "dependencies": {
+    "express": "~ 1.0",
+    "jade": "~ 0.6",
+    "underscore": "~ 1.1""
+  },
+  "keywords": ["renderer", "html5", "canvas", "matrix transforms"],
+  "main": "index",
+  "engines": { "node": ">= 0.2.6" }
+}
