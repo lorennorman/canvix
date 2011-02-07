@@ -1,0 +1,3 @@
+Game.TerrainSet = {}
+
+//= require "basic"

@@ -70,6 +70,8 @@ CR.Sprite =
           doScale(ctx)
 
           ctx.drawImage(img, 0, 0)
+          // ctx.strokeStyle = 'rgba(255, 0, 0, .65)'
+          // ctx.strokeRect(0, 0, width, height)
           _(children).each(function(child)
           {
             child.render(ctx)

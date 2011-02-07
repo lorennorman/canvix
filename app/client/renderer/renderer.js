@@ -22,12 +22,13 @@ var CR = (function()
 
       context.transformation(function()
       {
-        context.translate(- currentCamera.x +
+        context.translate(- currentCamera.x * currentCamera.scale +
                           currentCamera.viewport.x +
                           currentCamera.viewport.width/2,
-                          - currentCamera.y +
+                          - currentCamera.y * currentCamera.scale +
                           currentCamera.viewport.y +
                           currentCamera.viewport.height/2)
+        context.scale(currentCamera.scale, currentCamera.scale)
 
         _(renderStack).each(function(renderable)
         {
@@ -76,7 +77,7 @@ var CR = (function()
         }
       }))
 
-      initFunction()
+      initFunction && initFunction()
 
       setTimeout(renderOnce, 200)
     }
